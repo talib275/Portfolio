@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/skins/color-1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style-switcher.css">
+    </head>
+    <body>
+        <!-- Main Container Start -->
+         <div class="main-container">
+            <!-- Aside Start -->
+             <div class="aside hidden">
+                <div class="logo">
+                    <a href="#"><span>T</span>alib</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fa fa-code-fork"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+             </div>
+            <!-- Aside End -->
+            <!-- Main Content Start -->
+             <div class="maincontent">
+                <section id="home" class="home section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Hello, my name is <span class="name">Talib</span></h3>
+                                <h3 class="my-profession">I' m a <span class="typing">graduate</span></h3>
+                                <p>I'm a Master's student with a strong interest in data science, combining analytical thinking with a creative edge. With hands-on experience in Python, SQL, and data visualization tools, I'm passionate about turning messy data into clear, meaningful insights. Whether it's a dashboard, a model, or a narrative told through numbers — I'm always exploring new ways to learn and solve problems.</p>
+                                <div class="sectbuttons">
+                                    <a href="#projects" class="btn hire-me">See my projects</a>
+                                    <a href="#about" class="btn hire-me">Get to know me</a>
+                                    <a href="#contact" class="btn hire-me">Get in touch</a>
+                                </div>
+                                
+                            </div>
+                            <div class="home-img padd-15">
+                                <div class="corner top-left"></div>
+                                <div class="corner bottom-right"></div>
+                                <img src="images/sos_talib.jpg" alt="">
+                            </div>
+                        </div>
+                                <div class="row">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Age: <span>23</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Ethnicity: <span>Bengali</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Nationality: <span>British</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Religion: <span>Muslim</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>City: <span>Bristol (open to relocate)</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Occupation: <span>Masters' Student</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Status: <span>Looking for a grad scheme</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="btn hire-me padd-15">
+                                                <a href="images/Talib_CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">Open CV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                        
+                    </div>
+                </section>
+                <!--Projects start-->
+                <section id="projects" class="projects section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Projects</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="project-heading padd-15">
+                                <h2>Click on any project to explore what I built and why it matters. Each card opens a quick summary with visuals and context.</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--- Project items-->
+                            <div class="project-item padd-15" onclick="openModal('modal1')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/webscraping_function.png" alt="">
+                                </div>
+                            </div>
+                            <!--Hidden modal-->
+                            <div id="modal1" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                                    <h2>Automating Oscar Data Collection with Python</h2>
+                                    <img src="images/programming/webscraping_function.png" alt="" class="modal-img">
+                                    <p>During my master’s course, I used Python to build a custom webscraper that collected structured data from a wikipedia site. I wrote modular functions to pass parameters like year range and performer name. The function oscars_scraper() fetched Best Actress nomination data between 1920 and 2023 for a given performer. The resulting dataset was then cleaned and formatted into a pandas DataFrame. The output shown here is the top 10 entries returned for Janet Gaynor, including details like the film title, year, role, and whether the nomination resulted in a win. I also used pandas styling to make the data readable and visually accessible. This task strengthened my skills in requests, BeautifulSoup, function writing, and data manipulation.</p>
+                                </div>
+                            </div>
+                            <!--Project item end-->
+                            <div class="project-item padd-15" onclick="openModal('modal2')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/simul8.png" alt="">
+                                </div>
+                            </div>
+                            <!--Hidden modal-->
+                            <div id="modal2" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                                    <h2>Blood Collection System Simulation</h2>
+                                    <img src="images/programming/simul8.png" alt="" class="modal-img">
+                                    <p>During my master's, I developed a discrete-event simulation using Simul8 to assess the efficiency of a hospital's blood sample collection process. The model replicated the full end-to-end workflow—from patient sample arrival through decision routing, transport via pod or driver systems, registration, analysis, and data upload. Each stage had its own logic and resource constraints. For instance, samples could be routed through either a pneumatic pod system or manually delivered by a driver, depending on system load. At registration, samples were split between haematology and chemistry analysers based on type. I configured delays, queues, and resource allocations (e.g. limited pod machines, drivers, and lab staff) to reflect realistic operational conditions. This simulation helped identify bottlenecks, test various routing scenarios, and measure performance metrics like turnaround time and analyser utilisation. It also offered clear visual outputs to support process improvement recommendations for lab efficiency.</p>
+                                </div>
+                            </div>                            
+                            <!--- Project items-->
+                            <div class="project-item padd-15" onclick="openModal('modal3')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/dashboard.png" alt="">
+                                </div>
+                            </div>
+                            <div id="modal3" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+                                    <h2>Exploring Crime Trends Through Interactive Dashboards</h2>
+                                    <img src="images/programming/dashboard.png" alt="" class="modal-img">
+                                    <p>As part of a data visualisation module during my master's course, I created an interactive dashboard using Power BI to analyse regional crime patterns in England and Wales. The goal was to apply core design principles—clarity, accessibility, and accuracy—while ensuring the interface remained engaging and easy to interpret. The dashboard included a bubble map showing average crime estimates per 1,000 people, a demographic pie chart by sex, and filter controls for age brackets. Beyond just plotting data, I learned how to guide a viewer's attention, limit chart clutter, and create hierarchy through layout. I ensured visual balance and used color strategically to differentiate variables. This project helped me develop a stronger understanding of storytelling through data. It also gave me practical experience turning raw datasets into meaningful, policy-relevant insights for a wide audience.</p>
+                                </div>
+                            </div>                                        
+                            <!--Project item end-->                            
+                            <!--Project item end-->
+                            <div class="project-item padd-15" onclick="openModal('modal4')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/sql.png" alt="">
+                                </div>
+                            </div>
+                            <div id="modal4" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+                                    <h2>Data Analysis with DB Browser for SQLite</h2>
+                                    <img src="images/programming/sql.png" alt="" class="modal-img">
+                                    <p>For this project, I worked with a retail dataset in DB Browser for SQLite to practice data querying and logic building using SQL. I created nested queries and joined multiple tables—including Products, OrderDetails, and Categories—to extract meaningful insights. For instance, I identified which product categories were frequently bought together, excluding the one currently being analyzed, by filtering using WHERE, aggregating with COUNT, and ordering results with DESC. This hands-on experience helped sharpen my ability to break down complex data relationships. I also learned the importance of writing clear, modular queries using CTEs (Common Table Expressions) to improve readability and debugging. The structured yet flexible nature of SQL made it a powerful tool to find hidden trends and answer practical business questions through data.</p>
+                                </div>
+                            </div>                                
+                            <!--Project item end-->          
+                            <!--Project item end-->
+                            <div class="project-item padd-15" onclick="openModal('modal5')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/heatmap_london.png" alt="">
+                                </div>
+                            </div>
+                            <div id="modal5" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal5')">&times;</span>
+                                    <h2>Mapping Well-Being: A Borough-Level Heatmap</h2>
+                                    <img src="images/programming/heatmap_london.png" alt="" class="modal-img">
+                                    <p>In my free time, I explored the fundamentals of Python data visualisation by creating a heatmap of health ratings across London boroughs. I imported a public dataset, cleaned and pre-processed it using pandas, and matched the borough names to their corresponding areas on a UK shapefile. This gave me a deeper understanding of working with geospatial data and data merging techniques. The final output showed the percentage of residents reporting excellent health in each borough, revealing striking regional patterns. I used matplotlib and seaborn to style the map and define a custom color palette. This project helped me get comfortable with mapping libraries and reinforced the importance of clear, intuitive data presentation when exploring regional statistics.</p>
+                                </div>
+                            </div>                                       
+                            <!--Project item end-->   
+                            <!--Project item end-->
+                            <div class="project-item padd-15" onclick="openModal('modal6')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/ibm.png" alt="">
+                                </div>
+                            </div>
+                            <div id="modal6" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal6')">&times;</span>
+                                    <h2>IBM PY0101EN: A Practical Introduction to Python</h2>
+                                    <img src="images/programming/ibm.png" alt="" class="modal-img">
+                                    <p>I completed IBM’s PY0101EN course, which gave me a solid grounding in Python for data science. It began with core concepts like variables, conditionals and loops before introducing functions, data structures and basic file handling. One of the highlights was learning to clean and extract data using libraries such as BeautifulSoup and pandas, which I used to parse HTML and analyze embedded data. The course also covered practical data science workflows including web scraping, visualising data with matplotlib, and performing basic statistical operations. I especially enjoyed the interactive labs and quizzes, which helped me apply the theory hands-on and build confidence in writing Python code from scratch. It laid the foundation for everything I’ve done with data since.</p>
+                                </div>
+                            </div>                                 
+                            <!--Project item end-->   
+                            <!--Project item end-->
+                            <div class="project-item padd-15" onclick="openModal('modal7')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/couch2coder.png" alt="">
+                                </div>
+                            </div>
+                            <div id="modal7" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal7')">&times;</span>
+                                    <h2>BrightBlog: My First HTML/CSS Project</h2>
+                                    <img src="images/programming/couch2coder.png" alt="" class="modal-img">
+                                    <p>As part of Bright Network’s “Couch to Coder 2024” programme, I built my first static website: BrightBlog. Using only HTML and CSS, I created a colourful blog layout with filter buttons, a playful theme, and a responsive structure. I designed the navigation bar, styled interactive elements like the sidebar filters, and used CSS properties like flexbox, hover, and border-radius to enhance the visual feel. The project helped me build confidence in frontend development and understand the structure of a basic web page. I experimented with layout positioning, typography, and color palettes to reflect a fun and user-friendly interface. Although it was simple, this project solidified my interest in UI/UX and encouraged me to keep building. It's the first time I saw my code come to life in a browser.</p>
+                                </div>
+                            </div>                                 
+                            <!--Project item end-->                                                                                                         
+                        </div>
+                    </div>
+                </section>
+                <!--Projects end-->
+                <!--About start-->
+                <section id="about" class="about section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>About Me</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text padd-15">
+                                        <h2>Get to know me! Take a closer look at who I am, highlighting my skills, hobbies, personal values, and long-term goals; everything that shapes how I think, work, and grow.</h2>
+                                    </div>
+                                </div>
+                                <div class="row hidden">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Age: <span>23</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Ethnicity: <span>Bengali</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Nationality: <span>British</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Religion: <span>Muslim</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>City: <span>Bristol (open to relocate)</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Occupation: <span>Masters' Student</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Status: <span>Looking for a grad scheme</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="#" class="btn">Download CV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="skills padd-15">
+                                        <h3 class="title">Skills</h3>
+                                        <div class="row">
+                                            <div class="skill-box padd-15">
+                                                <div class="skill shadow-dark">
+                                                    <!--skill-->
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-laptop-code"></i> Programming Languages
+                                                            </h4>
+                                                            <p class="skill-text">Through my time at uni and in my own free time, I have learnt several programming languages. Data science related languages: python, R, MATLAB and SQL. For web design, I've learnt HTML, CSS and JS. Whilst I still lack profressional experience, I am confident in my ability to pick things up quickly.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-cubes"></i> Software Competency
+                                                            </h4>
+                                                            <p class="skill-text">I have also learnt several software throughout uni. Data science related software: MS Excel and PowerBI, DB Browser for SQLlite, Simul8 and Vensim. Engineering software: NI Multisim, Siemens NX. Other software: MS Word and PowerPoint.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-users"></i> Interpersonal Skills
+                                                            </h4>
+                                                            <p class="skill-text"> I'm proud of my communication skills, shaped by growing up between the UK and Oman and attending a culturally diverse school in Bristol. These experiences, combined with my involvement in networking events such as career fairs, formal dinners, and the Bright Network Festival, have enabled me to confidently engage with people from all walks of life. While English is my first language, I also speak Bengali, which helps me connect with a broader community. I'm a quick and adaptable learner who remains calm under pressure, takes initiative when challenges arise, and approaches tasks with both efficiency and high standards. By prioritising responsibilities based on urgency and importance, I consistently meet deadlines while progressing toward my personal goals. </p>
+                                                    </div>                                                    
+                                                    <!-- skill end-->                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hobbies padd-15">
+                                        <h3 class="title">Hobbies</h3>
+                                        <div class="row">
+                                            <div class="skill-box padd-15">
+                                                <div class="skill shadow-dark">
+                                                    <!--hobby-->
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-dumbbell"></i> Fitness
+                                                            </h4>
+                                                            <p class="skill-text">Keeping fit and healthy is very important to me. I go to the gym regularly to improve my physique, strength, stamina and flexibility. "Stronger than yesterday" is the way I pursue my growth. I also really love water activities and I'm currently in the process of attaining my scuba-diving license, but with that I hope to go on many more adventures. I like to try things out and participate, despite knowing I am nowhwere near the best at any sport. I'm always down to play anything for fun.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-shirt"></i> Fashion
+                                                            </h4>
+                                                            <p class="skill-text">Apperances are very important. It plays a big role in our interactions and how we see people. We say "don't judge a book by its cover" but it's much easier said than done. How we present ourselves shows how much we respect ourselves and tells others how much respect to give. I like to mix different styles and colours together to create my own outfits that macth well whilst not overdoing it. An additional dimension to fashion is perfume, something I'm also very passionate about.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-plane"></i> Travel
+                                                            </h4>
+                                                            <p class="skill-text">I love to explore different cities and countries. There's so much to learn from every different place. From the people, culture, food etc. I have been to quite a few countries and loved every experience. Each country is so different and special in their own way. There's always something to take from each adventure. I hope to continue travelling, and exploring new countries and cities, meeting more and more people every time.</p>
+                                                    </div>                                                    
+                                                    <!-- hobby end-->                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="morals padd-15">
+                                        <h3 class="title">Morals</h3>
+                                        <div class="row">
+                                            <div class="skill-box padd-15">
+                                                <div class="skill shadow-dark">
+                                                    <!--moral-->
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-sun"></i> Optimism
+                                                            </h4>
+                                                            <p class="skill-text">Glass half full. I like to look at things with a positive mindset. Honeslty, life is too short to be grumpy all the time! I think it's important to keep smiling even when things are tough. When I find things tough I like to savour it, enjoy it, knowing that it will eventually end. And so, I keep smiling.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-earth-europe"></i> Open-mindedness
+                                                            </h4>
+                                                            <p class="skill-text">Whilst it is important to have morals to stick to, I like to keep open-minded as it allows further growth. I have learnt so much and adapted my lifestyle so much just by taking in what others have suggested to me. Nevertheless, I like to pick and choose; I know that some aspects will work for me whilst others might not. I have also been able to experience a lot more by keeping a broad mind.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-coins"></i> Frugality
+                                                            </h4>
+                                                            <p class="skill-text">One of my biggest frustrations is wastage. I can never understand why things are bought and not used. Don't get me wrong, if things will eventually be utilised, that's different, but if it will just be stored away until it rots I find it very irritable. I like to be as efficient as possible: maximise quality whilst minimizing expenses, all the while ensuring that everything will be used and nothing wasted.</p>
+                                                    </div>                                                    
+                                                    <!-- moral end-->                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interests padd-15">
+                                        <h3 class="title">Interests</h3>
+                                        <div class="row">
+                                            <div class="skill-box padd-15">
+                                                <div class="skill shadow-dark">
+                                                    <!--interests-->
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-satellite-dish"></i> Technology
+                                                            </h4>
+                                                            <p class="skill-text">I love my gadgets. I like discovering new technologies or existing technologies that could better my lifestyle. My most recent interests in technology lie in VR headsets and their future capabilites. I'm sure at some point very soon a full bodysuit with vibrations and haptic feedback will be usable to truly emerge into simulations and gaming.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-brain"></i> Psychology
+                                                            </h4>
+                                                            <p class="skill-text">I love human interaction, there's so much to learn from each and every interaction, every different person with their individual personalities, characteristics and ideals. I have a strong appreciation for all sorts of people and I like to understand and study a persons's actions and personality to grasp a better picture of that person, and to see what I can implement into myself to become better.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-landmark"></i> History and Culture
+                                                            </h4>
+                                                            <p class="skill-text">I think there is a lot to learn from ancient civilizations and I find the stories very fascinating. However, I'm not really interested in learning what they teach at school, I like to pick and choose for myself depending on what I'm fascinated by. Recently I've listened to podcasts on the truth of Atlantis, and Gilgamesh of Babylon. I like to link these stories back to mythology and fairytales to understand the origins of storybooks, films, TV shows etc.</p>
+                                                    </div>                                                    
+                                                    <!-- moral end-->                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="goals padd-15">
+                                        <h3 class="title">Goals</h3>
+                                        <div class="row">
+                                            <div class="skill-box padd-15">
+                                                <div class="skill shadow-dark">
+                                                    <!--goals-->
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-dove"></i> Freedom
+                                                            </h4>
+                                                            <p class="skill-text">I hope that one day I can achieve a modest level of financial freedom. I don't want to end up snobbish but I want to live a luxurious yet humble life where I don't need to worry about finances.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-heart"></i> Community
+                                                            </h4>
+                                                            <p class="skill-text">I remember looking back at the goals I gave myself at the age of 14: attain world peace. Whilst this is a huge and almost impossible goal to achieve, I can start by helping out the community around me. I want to be in a position where I can support other people's dreams and goals, and to guide and inspire people who may not truly know what they want to do.</p>
+                                                    </div>
+                                                    <div class="skill-item">
+                                                            <h4 class="skill-title">
+                                                                <i class="fa fa-seedling"></i> Environment
+                                                            </h4>
+                                                            <p class="skill-text">Whilst there are so many advancements in technology, it saddens me how much we've corrupted the nature of our planet. I am as much guilty of over-consumption as anybody else but I do hope we can eventually find better solutions to preserve our nature. I am passionate about recycling and do my best to do so when I can as that honestly is the very least I can do for the world.</p>
+                                                    </div>                                                    
+                                                    <!-- goal end-->                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--About end-->
+                <!--Contact start-->                
+                <section id="contact" class="contact section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full-width padd-15"><h3 class="contact-title">Let's Connect! Click on the icons to go to my pages.</h3></div>                             
+                        </div>
+                        <div class="row padd-15 contact-info-container">
+                            <!--Contact info item start -->
+                            <div class="contact-info-item">
+                                <a href="tel:+447932040164">
+                                    <div class="icon"><i class="fa fa-phone"></i></div>
+                                    <h4>+44 7932 040 164</h4>
+                                </a>
+                            </div>
+                            <!-- Contact info end -->
+                            <!--Contact info item start -->
+                            <div class="contact-info-item">
+                                <a href="mailto:thossain180@gmail.com" target="_blank">
+                                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                                    <h4 style="text-transform: lowercase;">thossain180@gmail.com</h4>
+                                </a>
+                            </div>
+                            <!-- Contact info end -->
+                            <!--Contact info item start -->
+                            <div class="contact-info-item">                                
+                                <a href="https://www.linkedin.com/in/talib-hossain-2a734922a/" target="_blank">
+                                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                                    <h4>LinkedIn</h4>
+                                </a>
+                            </div>
+                            <!-- Contact info end -->
+                            <!--Contact info item start -->
+                            <div class="contact-info-item">                                
+                                <a href="https://github.com/talib275" target="_blank">
+                                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                                    <h4>GitHub</h4>                                    
+                                </a>
+                            </div>
+                            <!-- Contact info end -->                                                                                                   
+                        </div>
+                        <!--contact form-->
+                        <!--<div class="row hidden">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input id="text" type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input id="email" type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="button" class="btn" onclick="sendEmail()">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </section>
+                <!--Contact end-->
+             </div>
+             <!--Main Content End-->
+         </div>
+        <!-- Main Container End -->
+        <!-- Style Switcher Start -->
+        <div class="style-switcher hidden">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-skin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colours</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')""></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')""></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')""></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')""></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')""></span>
+            </div>
+        </div>
+        <!-- Style switcher end -->
+        <!-- JS Files -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

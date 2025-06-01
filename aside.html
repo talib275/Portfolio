@@ -1,0 +1,52 @@
+             <div class="aside hidden">
+                <div class="logo">
+                    <a href="#"><span>T</span>alib</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fa fa-code-fork"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+             </div>
+
+
+.home .home-img
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+.home-img::after
+{
+    content: "";
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    border-bottom: 0.625em solid var(--skin-color);
+    border-right: 0.625em solid var(--skin-color);
+    right: 0.625em;
+    bottom: -0.7em;
+}
+.home-img::before
+{
+    content: "";
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    border-top: 0.625em solid var(--skin-color);
+    border-left: 0.625em solid var(--skin-color);
+    left: 0.625em;
+    top: -1.25em;
+}
+.home .home-img img
+{
+    height: auto;
+    max-height: 50vh;
+    width: auto;
+    max-width: 100%;
+}             
