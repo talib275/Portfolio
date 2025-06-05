@@ -588,7 +588,7 @@ h3.my-profession
     display: flex;
     flex-wrap: wrap;
     gap: 1.25em; /* Consistent spacing between items */
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /* Section Heading */
