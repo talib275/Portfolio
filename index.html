@@ -99,8 +99,25 @@
                             <div class="project-heading padd-15">
                                 <h2>Click on any project to explore what I built and why it matters. Each card opens a quick summary with visuals and context.</h2>
                             </div>
-                        </div>
+                        </div>                        
                         <div class="row">
+                            <!--- Project items-->
+                            <div class="project-item padd-15" onclick="openModal('modal9')">
+                                <div class="project-item-inner shadow-dark"></div>
+                                <div class="project-img">
+                                    <img src="images/programming/dissertation.png" alt="">
+                                </div>
+                            </div>
+                            <!--Hidden modal-->
+                            <div id="modal9" class="modal-overlay">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal9')">&times;</span>
+                                    <h2>Master's Dissertation</h2>
+                                    <img src="images/programming/dissertation.png" alt="" class="modal-img">
+                                    <p>In my dissertation, I developed a comprehensive machine learning pipeline to predict employee performance and retention. I utilized SQL for robust data preprocessing, cleaning, and joining multiple disparate datasets from various HR systems. This included extensive feature engineering, such as calculating employee tenure and aggregating financial metrics. Subsequently, I used Python within a Jupyter Notebook environment to conduct exploratory data analysis, handle missing values through imputation, and normalize features. Finally, I built, evaluated, and fine-tuned machine learning models, including Random Forest Regression for performance prediction and Logistic Regression for retention classification, to provide actionable insights for a human resources department. This project demonstrated my proficiency in data manipulation, model development, and translating complex data into strategic business solutions.</p>                                    
+                                </div>
+                            </div>
+                            <!--Project item end-->                            
                             <!--- Project items-->
                             <div class="project-item padd-15" onclick="openModal('modal8')">
                                 <div class="project-item-inner shadow-dark"></div>
